@@ -54,6 +54,7 @@ L'architettura attuale è pensata per **massimizzare** la privacy.
 * **Telegram Allow List:** Il bot è blindato e risponde *esclusivamente* al mio ID Telegram personale.
 * **Isolamento Gateway:** L'interfaccia di OpenClaw (porta 18789) è limitata a `127.0.0.1` (localhost). Non è accessibile dalla rete Wi-Fi locale o dall'esterno.
 * **Nessun Port Forwarding:** Il Mac Mini è protetto dal firewall del router domestico (NAT).
+* **Hardware Kill Switch:** L'alimentazione del Mac Mini è collegata a una presa smart (Tapo). In caso di comportamenti anomali (es. comandi non richiesti o loop), posso letteralmente "staccare la spina" da remoto tramite l'app sul telefono.
 
 ---
 
