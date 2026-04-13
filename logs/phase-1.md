@@ -1,6 +1,19 @@
 # Phase 1 Log: Native Setup on Mac Mini
 
-## [Lun 13 apr] - Setup Iniziale
+## [Ven 10 apr] - Preparazione Iniziale
+
+- **Obiettivo:** Guardare i video di setup per capire l'architettura, scaricare il necessario e provare OpenClaw tramite Telegram (completare il setup, parlarci, verificare i file `.md` e assicurarsi che tutto sia a posto).
+- **Risultato:** Raggiunto. Il Mac Mini era completamente pulito: ho disconnesso l'account iCloud e disattivato le password salvate. Ho scaricato Ollama, fatto il pull di `gemma4:e4b` (scelta dettata dai miei 16GB di RAM), impostato il bot Telegram, configurato API e token, e infine lanciato il comando di installazione di OpenClaw. Dopo vari tentativi, l'installazione è andata a buon fine.
+
+- **Problemi riscontrati:**
+  - **Setup macchinoso:** Tutto bene a parte l'installazione di OpenClaw, che ha richiesto diversi tentativi per capire le impostazioni e settarle correttamente. Penso di aver creato e cancellato vari file intermedi durante le prove, e ho il dubbio di non aver rimosso correttamente tutte le cartelle. Alla fine ci sono riuscito, non senza difficoltà.
+  - **Latenza iniziale:** Le prime chat nella dashboard e tramite Telegram sono risultate un po' lente e l'agente non è riuscito a completare il security audit che gli avevo richiesto.
+
+- **Prossimo test:** Capire meglio le logiche di funzionamento del sistema e implementare la ricerca web tramite SearXNG nell'apposito container Docker.
+
+---
+
+## [Lun 13 apr] - Setup Iniziale SearXNG e Test
 - **Obiettivo:** Settare e utilizzare la dashboard di OpenClaw, il bot Telegram e SearXNG in locale. Poiché il pericolo numero 1 è l'accesso malevolo al bot, la priorità assoluta è la sicurezza. Effettuare prove e test generali del sistema.
 - **Risultato:** Raggiunto. La struttura di base e la ricerca web funzionano, sebbene il sistema risulti un po' lento nelle comunicazioni.
 
