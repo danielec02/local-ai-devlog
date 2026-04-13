@@ -1,0 +1,9 @@
+# Chiavi e segreti
+.env
+*.api_key
+
+# File di sistema Mac
+.DS_Store
+
+# Log di OpenClaw (non si sa mai!)
+openclaw/logs/
