@@ -11,25 +11,25 @@ OpenClaw è l'unico componente a interfacciarsi con l'"esterno" tramite Telegram
 
 ```mermaid
 graph TD
-    User[📱 Tu (Telegram App)] -- Chat Sicura --> TG[☁️ Server Telegram]
+    User["📱 Tu (Telegram App)"] -->|"Chat Sicura"| TG["☁️ Server Telegram"]
     
     subgraph "🖥️ Mac Mini M1 (Dietro NAT Firewall)"
-        OC[🦞 OpenClaw Gateway\nlocalhost:18789]
+        OC["🦞 OpenClaw Gateway<br>localhost:18789"]
         
         subgraph "Motore IA"
-            Ollama[🦙 Ollama] --> Gemma[🧠 Gemma 4:e4b]
+            Ollama["🦙 Ollama"] --> Gemma["🧠 Gemma 4:e4b"]
         end
         
         subgraph "Docker"
-            SearXNG[🔍 SearXNG Container\nOutput JSON]
+            SearXNG["🔍 SearXNG Container<br>Output JSON"]
         end
         
-        OC -- Generazione Testo <--> Ollama
-        OC -- Ricerca Web Privata <--> SearXNG
+        OC <-->|"Generazione Testo"| Ollama
+        OC <-->|"Ricerca Web Privata"| SearXNG
     end
     
-    TG -- Messaggi / Polling --> OC
-    SearXNG -- Ricerche Anonime --> Web[🌐 Internet (Google/Bing)]
+    TG -->|"Messaggi / Polling"| OC
+    SearXNG -->|"Ricerche Anonime"| Web["🌐 Internet (Google/Bing)"]
 ```
 
 *Questa prima architettura rispecchia le indicazioni che ho trovato unendo le info di questi due video di Bart Slodyczka: [OpenClaw Full Tutorial](https://www.youtube.com/watch?v=BoC5MY_7aDk&list=PLi7jtY2ZZqRYb7LXb50IjnsdmUOFq0fAW&index=5) e [Gemma 4 + SearXNG Private Setup](https://www.youtube.com/watch?v=T0CKsU0hQx4&list=PLi7jtY2ZZqRYb7LXb50IjnsdmUOFq0fAW).*
