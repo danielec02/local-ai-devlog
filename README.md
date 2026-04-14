@@ -66,3 +66,8 @@ I prossimi passi sono: il test di altri modelli open-source e l'integrazione di 
   - **The Bodyguard:** Usare Caddy come reverse proxy e scudo contro il web.
   - **The Filter:** Esporre solo n8n per ricevere webhook esterni.
   - **The Backdoor:** Configurare n8n per comunicare con OpenClaw esclusivamente tramite una rete Docker interna isolata, garantendo che l'agente IA non sia mai toccato dal traffico internet pubblico.
+
+Presa un po' di dimestichezza, altri concetti interessanti da esplorare sono:
+
+- [ ] **Ecosistema di Sviluppo e PKM:** Integrare l'uso di **Claude Code** combinato con **NotebookLM** e **Obsidian**.
+- [ ] **Architettura Multi-Agente:** Passare da un singolo assistente generico a un team di molteplici agenti IA che collaborano tra loro per risolvere task complessi in completa autonomia.
