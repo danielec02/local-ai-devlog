@@ -71,3 +71,8 @@ Presa un po' di dimestichezza, altri concetti interessanti da esplorare sono:
 
 - [ ] **Ecosistema di Sviluppo e PKM:** Integrare l'uso di **Claude Code** combinato con **NotebookLM** e **Obsidian**.
 - [ ] **Architettura Multi-Agente:** Passare da un singolo assistente generico a un team di molteplici agenti IA che collaborano tra loro per risolvere task complessi in completa autonomia.
+
+---
+
+## 📚 Risorse e Documentazione
+Per la lista completa di tutorial, paper scientifici e documentazione ufficiale che sto seguendo per il progetto 👉 **[Wiki delle Risorse](./docs/resources.md)**
