@@ -30,14 +30,18 @@
 
 ## [Lun 20 apr] - Riflessioni Architetturali e Alternative
 
-Nessun test pratico sul sistema OpenClaw dall'ultimo aggiornamento. Dopo essermi confrontato con persone più esperte, sono arrivato a rivalutare leggermente la roadmap futura. Chi mi ha dato questi consigli fa uso di Claude Code su sistema Linux e di altri tool molto interessanti per quanto riguarda la sicurezza dell'infrastruttura; in particolare mi è stato accennato l'utilizzo di Tailscale e Podman rootless. Mi sono stati raccomandati anche **Cursor** e la comoda implementazione ufficiale di Claude dentro VSCode.
+Nessun test pratico sul sistema OpenClaw dall'ultimo aggiornamento.
+
+- **Test Modelli Locali:** Ho scaricato `qwen3.5:9b` tramite Ollama. L'obiettivo a breve termine è testare le sue performance confrontandolo con `gemma4:e4b`, per capire quale si adatta meglio al ruolo di "cervello" mantenendosi stabile nei limiti dei miei 16GB di RAM.
+
+Dopo essermi confrontato con persone più esperte, sono arrivato a rivalutare leggermente la roadmap futura. Chi mi ha dato questi consigli fa uso di Claude Code su sistema Linux e di altri tool molto interessanti per quanto riguarda la sicurezza dell'infrastruttura; in particolare mi è stato accennato l'utilizzo di Tailscale e Podman rootless. Mi sono stati raccomandati anche **Cursor** e la comoda implementazione ufficiale di Claude dentro VSCode.
 
 Riflessioni e considerazioni raggiunte:
 
 - **Networking e Sicurezza:**
-  Il motivo per cui Bart utilizza Caddy come "bodyguard" nel suo tutorial è perché lui esegue l'installazione su un server cloud DigitalOcean. Un server cloud è costantemente esposto all'internet pubblico (ha un IP pubblico), quindi usare un reverse proxy come Caddy per gestire l'HTTPS e bloccare le porte è obbligatorio.
-  Il mio caso è diverso: io sto usando un PC personale, già protetto dal NAT del router. Applicare la logica di Bart pari pari sul mio Mac Mini significherebbe dover aprire le porte del router domestico (Port Forwarding), introducendo inutili rischi di sicurezza.
-  Invece di usare Caddy, userò una combinazione tra la rete interna di Docker e Tailscale Serve (una funzione integrata in Tailscale).
+Il motivo per cui Bart utilizza Caddy come "bodyguard" nel suo tutorial è perché lui esegue l'installazione su un server cloud DigitalOcean. Un server cloud è costantemente esposto all'internet pubblico (ha un IP pubblico), quindi usare un reverse proxy come Caddy per gestire l'HTTPS e bloccare le porte è obbligatorio.
+Il mio caso è diverso: io sto usando un PC personale, già protetto dal NAT del router. Applicare la logica di Bart pari pari sul mio Mac Mini significherebbe dover aprire le porte del router domestico (Port Forwarding), introducendo inutili rischi di sicurezza.
+Invece di usare Caddy, userò una combinazione tra la rete interna di Docker e Tailscale Serve (una funzione integrata in Tailscale).
   * **Comunicazione Interna (OpenClaw ↔ n8n):** OpenClaw e n8n comunicheranno tra loro esclusivamente tramite la rete invisibile interna di Docker.
   * **Interfaccia Utente (Io ↔ n8n):** L'interfaccia web di n8n non sarà esposta al mio Wi-Fi locale. Sarà legata solo al localhost del Mac. Tailscale prenderà quel localhost e lo esporrà in modo sicuro (e con HTTPS automatico) solo sulla mia rete privata Tailscale.
 
@@ -48,4 +52,6 @@ Riflessioni e considerazioni raggiunte:
   - [ ] Analizzare l'integrazione di questi tool con **Obsidian** e **NotebookLM** per il PKM.
 
 - **Decisione Attuale:**
-  Di fatto Claude Code andrebbe a sostituire il ruolo attuale di OpenClaw; questo però richiede un abbonamento o crediti API a consumo (a meno che effettivamente la versione CLI non offra la possibilità di utilizzare modelli in locale con Ollama). Dovendomi quindi prima informare su questo, al momento continuo i test di base con OpenClaw per mantenere il focus sull'ecosistema 100% gratuito, ma avvio ufficialmente la fase di documentazione per preparare il terreno a un "pivot" verso Claude.
+Di fatto Claude Code andrebbe a sostituire il ruolo attuale di OpenClaw; questo però richiede un abbonamento o crediti API a consumo (a meno che effettivamente la versione CLI non offra la possibilità di utilizzare modelli in locale con Ollama). Dovendomi quindi prima informare su questo, al momento continuo i test di base con OpenClaw per mantenere il focus sull'ecosistema 100% gratuito, ma avvio ufficialmente la fase di documentazione per preparare il terreno a un "pivot" verso Claude.
+
+
