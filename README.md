@@ -61,7 +61,7 @@ graph TD
 
 L'architettura è pensata per **massimizzare** la privacy.
 
-  * **Cervello (Modello IA):** Gemma 4:e4b - Modello open source di Google.
+  * **Cervello (Modelli IA):** `gemma4:e4b` (Google) e `qwen3.5:9b` (Alibaba). Attualmente in fase di comparazione.
   * **Motore (Inference):** Ollama - Installazione su macOS.
   * **Gateway / Agente:** OpenClaw.
   * **Interfaccia Utente:** Bot Telegram dedicato.
