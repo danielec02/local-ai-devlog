@@ -10,6 +10,8 @@ In questo documento terrò traccia di tutta la documentazione, i paper e i video
 * **[OpenClaw Framework](https://openclaw.ai/):** Sito ufficiale e documentazione del framework che funge da gateway per l'agente.
 * **[SearXNG (Integrazione OpenClaw)](https://docs.openclaw.ai/tools/searxng-search):** Documentazione specifica per collegare il motore di metaricerca all'agente tramite output JSON.
 * **[Paper arXiv:2510.18921](https://arxiv.org/abs/2510.18921):** Studio di riferimento che conferma la validità del chip Apple Silicon (M1 e successivi) combinato col framework MLX come alternativa solida alle GPU nei data center per l'inferenza locale.
+* **[Ollama Library - Gemma 4](https://ollama.com/library/gemma):** Modello open source di Google (scelto come base iniziale).
+* **[Ollama Library - Qwen 3.5](https://ollama.com/library/qwen):** Modello di Alibaba.
 
 ### 🎬 Setup Architettura e Sicurezza (Ispirazione: Bart Slodyczka)
 Questi video costituiscono la base logica e pratica per l'isolamento dei componenti e il flusso di lavoro:
