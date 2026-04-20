@@ -25,3 +25,5 @@
   - **Gestione File:** Fa fatica a gestire e modificare i file di sistema. Non mi è ancora chiaro se questo avvenga per evitare danni (sicurezza), per qualche configurazione errata nei suoi file `.md`, o semplicemente per i limiti del modello stesso (Gemma4:e4b).
 
 - **Prossimo test:** Effettuare un security audit completo e risolvere tutte le eventuali segnalazioni di vulnerabilità. Prendere ulteriore dimestichezza con le dinamiche e i limiti del sistema.
+
+## [Lun 20 apr]
