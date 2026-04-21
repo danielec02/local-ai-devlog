@@ -9,8 +9,15 @@ local-ai-devlog/
 ├── README.md           # La dashboard principale
 ├── docs/
 │   └── resources.md    # 📚 Wiki: Link, paper scientifici e tutorial
-├── logs/               # 📝 Diari di bordo e riflessioni architetturali
+├── logs/               # 📝 Diari di bordo (openclaw.md, claude-code.md)
 └── configs/            # ⚙️ File di configurazione isolati per strumento
+    ├── openclaw-stack/ # 🧠 Il cuore dell'agente IA
+    ├── n8n/            # ⚙️ Flussi e Automazioni
+    │   └── workflows/
+    ├── searxng/        # 🔍 Ricerca Web Privata
+    │   └── settings.yml    # Configurazione per output JSON abilitato
+    └── infrastructure/ # 🛡️ Rete e Sistema (Mac Mini)
+        └── tailscale/
 ````
 
 -----
