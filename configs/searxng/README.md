@@ -6,8 +6,7 @@ Per l'installazione e l'integrazione di SearXNG ho seguito la [documentazione uf
 In questa cartella è salvato unicamente il mio file `settings.yml` modificato. 
 La modifica fondamentale rispetto al file originale (come spiegato nella documentazione) riguarda l'abilitazione dell'output in formato JSON. Nello specifico, ho aggiunto `- json` sotto la voce `formats`, passaggio strettamente necessario per permettere all'agente IA di parsare i risultati della ricerca web.
 
-### Come ripristinare o procedere con il setup:
-Per applicare correttamente questo file al container SearXNG, procedere come segue:
+### Come procedere con il setup:
 
 1. Avviare temporaneamente un container SearXNG per generare i file:
    ```bash
