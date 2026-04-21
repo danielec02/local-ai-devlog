@@ -1,7 +1,7 @@
-# 🔍 Configurazioni SearXNG
+# 🔍 Configurazione SearXNG
 Per l'installazione e l'integrazione di SearXNG ho seguito la [documentazione ufficiale di OpenClaw](https://docs.openclaw.ai/tools/searxng-search).
 
-### ⚠️ La mia modifica personalizzata
+### ⚠️ Modifica
 In questa cartella è salvato unicamente il mio file `settings.yml` modificato. 
 La modifica fondamentale rispetto al file originale (come spiegato nella documentazione) riguarda l'abilitazione dell'output in formato JSON. Nello specifico, ho aggiunto `- json` sotto la voce `formats`, passaggio strettamente necessario per permettere all'agente IA di parsare i risultati della ricerca web.
 
