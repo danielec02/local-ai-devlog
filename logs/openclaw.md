@@ -55,3 +55,14 @@ Invece di usare Caddy, userò una combinazione tra la rete interna di Docker e T
 Di fatto Claude Code andrebbe a sostituire il ruolo attuale di OpenClaw; questo però richiede un abbonamento o crediti API a consumo (a meno che effettivamente la versione CLI non offra la possibilità di utilizzare modelli in locale con Ollama). Dovendomi quindi prima informare su questo, al momento continuo i test di base con OpenClaw per mantenere il focus sull'ecosistema 100% gratuito, ma avvio ufficialmente la fase di documentazione per preparare il terreno a un "pivot" verso Claude.
 
 
+---
+
+## [Mar 21 apr] - Ristrutturazione Repository e Preparazione Fase 2
+
+Oggi ho pensato alla ristrutturazione delle cartelle, installato Tailscale e cominciato ad organizzare e preparare la Fase 2.
+
+- **Ristrutturazione Cartelle:** Ho implementato una struttura modulare per la cartella `configs/`. Invece di tenere i file sfusi, ora ogni strumento (OpenClaw, n8n, SearXNG, Infrastruttura) ha la sua sottocartella dedicata. Questo permetterà di gestire meglio i backup e di non mischiare logiche applicative con logiche di rete.
+
+All'interno della cartella dedicata `configs/n8n/workflows/` potrò salvare periodicamente l'export JSON delle automazioni, rendendo il setup resiliente a eventuali corruzioni del database del container. Comincio a creare i file di configurazione.
+
+- **Prossimi passi:** Annotare i comandi e file per il setup di *Tailscale Serve*, che sostituirà Caddy per l'accesso sicuro ai servizi localhost.
