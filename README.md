@@ -54,7 +54,7 @@ graph TD
     SearXNG -->|"Ricerche Anonime"| Web["🌐 Internet (Google/Bing)"]
 ```
 
-[*Architettura ispirata dalle logiche di Bart Slodyczka: [OpenClaw Full Tutorial](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3DBoC5MY_7aDk) e [Private Setup](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3DT0CKsU0hQx4).*](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3DT0CKsU0hQx4)
+*Architettura ispirata dalle logiche di Bart Slodyczka: [OpenClaw Full Tutorial](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3DBoC5MY_7aDk) e [Private Setup](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3DT0CKsU0hQx4).*
 
 ### 🖥️ Hardware
 
@@ -103,4 +103,4 @@ Fase di studio parallela per valutare un "pivot" verso l'ecosistema Anthropic.
 
 ## 📚 Risorse e Documentazione
 
-Per la lista completa di tutorial, paper scientifici e documentazione ufficiale che sto seguendo per entrambi i progetti [👉 **[Vai alla Wiki delle Risorse](https://www.google.com/search?q=./docs/resources.md)**](https://www.google.com/search?q=./docs/resources.md)
+Per la lista completa di tutorial, paper scientifici e documentazione ufficiale che sto seguendo per entrambi i progetti 👉 **[Vai alla Wiki delle Risorse](https://www.google.com/search?q=./docs/resources.md)**
