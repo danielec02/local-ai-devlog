@@ -1,9 +1,27 @@
-# Chiavi e segreti
+# Chiavi, segreti e config
 .env
+.env.*
+!.env.example
 *.api_key
 
 # File di sistema Mac
 .DS_Store
+._*
+.AppleDouble
+.LSOverride
 
-# Log di OpenClaw (non si sa mai!)
+# Log di OpenClaw
 openclaw/logs/
+logs/*.log
+
+# Ignora il file json con le password ma non l'esempio
+configs/openclaw-stack/openclaw-data/openclaw.json
+!configs/openclaw-stack/openclaw-data/openclaw.json.example
+
+# Ignora ciò che OpenClaw salva mentre è in esecuzione (db, sessioni)
+configs/openclaw-stack/openclaw-data/db/
+configs/openclaw-stack/openclaw-data/sessions/
+
+# Dati di n8n o postgres in locale
+configs/openclaw-stack/n8n_data/
+configs/openclaw-stack/postgres_data/
